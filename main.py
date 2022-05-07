@@ -35,13 +35,20 @@ print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by K
 # my version after Friday 101 meeting
 
 Hercues_dic = {
-    "attack_power": 200, 
-    "health_level" : 300
+    "attack_power_level" : 100, 
+    "health_level"       : 200
     }
 
-Oponent_dic = {
-    "attack_power": 100, 
-    "health_level" : 150
+opponent_dic = {
+    "attack_power_level" : 50, 
+    "health_level"       : 110
     }
 
+def attack(attacker, defender) : 
+    battle_result_health = defender["health_level"] - attacker["attack_power_level"]
+    print(f" The defender's health is now {battle_result_health}")
+
+def run_game() :attack(Hercues_dic, opponent_dic);attack(opponent_dic,Hercues_dic)
+
+run_game()
 
