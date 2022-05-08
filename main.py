@@ -38,17 +38,39 @@ print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by K
 Hero = "Hercules"
 opponent_Name_List = ["Nemean_Lion" , "Lernaean_Hydra" , "Cerberus"]
 opponent_NicName_List = ['vicious','Nine_Headed', 'Dog_gaurd_of_under_water']
+print() 
+print("opponent Name List is: Nemean_Lion,Lernaean_Hydra,Cerberus")
+
+print()
+print("Do you want Hecules to attack Nemean_Lion?")
+if   input() == "Yes" : 
+     def attack(attacker, defender) : 
+        battle_result_health = defender["health_level"] - attacker["attack_power_level"]
+        print(f" The defender's health is now {battle_result_health}")
+
+        def run_game() :attack(Hercues_dic, Nemean_Lion_dic);attack(Nemean_Lion_dic,Hercues_dic)
+        run_game()
+
+elif print("Do you want Hecules to attack Lernaean_Hydra?"):
+        if input() == "Yes" :
+            def attack(attacker, defender) : 
+                battle_result_health = defender["health_level"] - attacker["attack_power_level"]
+                print(f" The defender's health is now {battle_result_health}")
+
+        def run_game() :attack(Hercues_dic, Lernaean_Hydra_dic);attack(Lernaean_Hydra_dic,Hercues_dic)
+        run_game()
 
 
-Hercues_dic = {
-    "attack_power_level" : 100, 
-    "health_level"       : 200
-    }
+elif  print("Do you want Hecules to attack Cerberus?") :
+        if input() == "Yes" :
+            def attack(attacker, defender) : 
+                battle_result_health = defender["health_level"] - attacker["attack_power_level"]
+                print(f" The defender's health is now {battle_result_health}")
 
-opponent_dic = {
-    "attack_power_level" : 50, 
-    "health_level"       : 110
-    }
+        def run_game() :attack(Hercues_dic, Cerberus_dic);attack(Cerberus_dic,Hercues_dic)
+        run_game()
+
+
 
 opponent_name_dic = {
    "Nemean_Lion"    : "vicious",
@@ -56,14 +78,34 @@ opponent_name_dic = {
    "Cerberus"       : "Dog_gaurd_of_under_water"
 }
 
+Hercues_dic = {
+    "attack_power_level" : 100, 
+    "health_level"       : 200
+    }
+
+Nemean_Lion_dic = {
+    "attack_power_level" : 50, 
+    "health_level"       : 110
+    }
+
+Lernaean_Hydra_dic = {
+    "attack_power_level" : 60, 
+    "health_level"       : 120
+    }
+
+Cerberus_dic = {
+    "attack_power_level" : 70, 
+    "health_level"       : 130
+    }
+
 
 # attacker : Hercules
 # defender : three guys to be killed
-def attack(attacker, defender) : 
-    battle_result_health = defender["health_level"] - attacker["attack_power_level"]
-    print(f" The defender's health is now {battle_result_health}")
+# def attack(attacker, defender) : 
+#     battle_result_health = defender["health_level"] - attacker["attack_power_level"]
+#     print(f" The defender's health is now {battle_result_health}")
 
-def run_game() :attack(Hercues_dic, opponent_dic);attack(opponent_dic,Hercues_dic)
+# def run_game() :attack(Hercues_dic, opponent_dic);attack(opponent_dic,Hercues_dic)
 
-run_game()
+# run_game()
 
