@@ -36,11 +36,8 @@
 
 print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by King Eurystheus to slay ...the vicious Nemean Lion, defeat the impossible nine-headed Lernaean Hydra, and capture the guard dog of the underworld—Cerberus.")
 Hero = "Hercules"
-Enemy_List = ["Nemean_Lion" , "Lernaean_Hydra" , "Cerberus"]
-Enemy_Attack_Names_List = ["vicious","Nine_Headed", "Dog_gaurd_of_under_water"]
-
-
-
+opponent_Name_List = ["Nemean_Lion" , "Lernaean_Hydra" , "Cerberus"]
+opponent_NicName_List = ['vicious','Nine_Headed', 'Dog_gaurd_of_under_water']
 
 
 Hercues_dic = {
@@ -52,6 +49,13 @@ opponent_dic = {
     "attack_power_level" : 50, 
     "health_level"       : 110
     }
+
+opponent_name_dic = {
+   "Nemean_Lion"    : "vicious",
+   "Lernaean_Hydra" : "Nine_Headed",
+   "Cerberus"       : "Dog_gaurd_of_under_water"
+}
+
 
 # attacker : Hercules
 # defender : three guys to be killed
