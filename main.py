@@ -5,7 +5,7 @@
 # and capture the guard dog of the underworld—Cerberus.
 
 
-print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by King Eurystheus to slay ...the vicious Nemean Lion, defeat the impossible nine-headed Lernaean Hydra, and capture the guard dog of the underworld—Cerberus.")
+# print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by King Eurystheus to slay ...the vicious Nemean Lion, defeat the impossible nine-headed Lernaean Hydra, and capture the guard dog of the underworld—Cerberus.")
 
 # my version vefore Friday 101 meeting
 # Hero = "Hercules"
@@ -34,6 +34,15 @@ print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by K
 
 # my version after Friday 101 meeting
 
+print("I am  Hercules, the greatest of the Greek Heroes! I have been tasked by King Eurystheus to slay ...the vicious Nemean Lion, defeat the impossible nine-headed Lernaean Hydra, and capture the guard dog of the underworld—Cerberus.")
+Hero = "Hercules"
+Enemy_List = ["Nemean_Lion" , "Lernaean_Hydra" , "Cerberus"]
+Enemy_Attack_Names_List = ["vicious","Nine_Headed", "Dog_gaurd_of_under_water"]
+
+
+
+
+
 Hercues_dic = {
     "attack_power_level" : 100, 
     "health_level"       : 200
@@ -44,6 +53,8 @@ opponent_dic = {
     "health_level"       : 110
     }
 
+# attacker : Hercules
+# defender : three guys to be killed
 def attack(attacker, defender) : 
     battle_result_health = defender["health_level"] - attacker["attack_power_level"]
     print(f" The defender's health is now {battle_result_health}")
